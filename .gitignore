@@ -1,0 +1,12 @@
+# Ignorar entornos virtuales de Python en cualquier subcarpeta
+**/.venv/
+**/venv/
+
+# Ignorar archivos temporales de Python y librerías
+**/__pycache__/
+**/.gradio/
+*.pyc
+
+# Ignorar archivos ocultos del sistema
+.DS_Store
+Thumbs.db

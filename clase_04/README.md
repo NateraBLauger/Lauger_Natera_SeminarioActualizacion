@@ -1,0 +1,1 @@
+En esta clase pasamos del repsositorio local a un space para que tenga funcionalidas en la web y vamos a crear una cuenta de Hugging Face.

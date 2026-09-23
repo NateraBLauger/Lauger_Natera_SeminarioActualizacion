@@ -1,0 +1,1 @@
+Aqui aprendimos a usar Render para cargar nuestra a este hosting, ya que se puede trabajar con python.

@@ -1,0 +1,1 @@
+En esta clase preparamos el entorno de desarrollo, instalamos giy y python (este último se instalo el IDE Visual Studio Code)

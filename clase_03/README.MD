@@ -1,0 +1,2 @@
+En esta clase aprendimos a usar git y github, como pasar del repositorio local al virtual.
+Apremdimos los errores comunes que podemos cometer al ser principiantes como: README duplicado, olvidar crear la carpeta git ignore y renombrar la rama master/main.

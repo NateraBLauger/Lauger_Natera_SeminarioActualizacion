@@ -1,0 +1,1 @@
+En esta clase aprendidmos sobre los hosting, que sirve para que desde cualquier dispositivo se pueda ingresar al link que generamso al crear nuestra app. Y tambien porque un hosting para una pag web comun no nos sirve si queremos trabajar con python. 
