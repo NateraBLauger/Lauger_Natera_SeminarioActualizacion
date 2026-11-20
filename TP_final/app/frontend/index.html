@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¿Qué pingüino es?</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>¿Qué especie de pingüino es?</h1>
+    <p>Ingresá las medidas y el modelo predice la especie.</p>
+
+    <form id="formulario" >
+      <label>Largo del pico (mm)
+        <input type="number" name="bill_length_mm" step="any" min="0.1" value="39.1" required>
+      </label>
+      <label>Alto del pico (mm)
+        <input type="number" name="bill_depth_mm" step="any" min="0.1" value="18.7" required>
+      </label>
+      <label>Largo de la aleta (mm)
+        <input type="number" name="flipper_length_mm" step="any" min="0.1" value="181" required>
+      </label>
+      <label>Peso (g)
+        <input type="number" name="body_mass_g" step="any" min="0.1" value="3750" required>
+      </label>
+      <button type="submit">Predecir</button>
+    </form>
+
+    <div id="resultado" aria-live="polite"></div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
