@@ -5,6 +5,7 @@ import pandas as pd
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
+from fastapi.staticfiles import StaticFiles
 
 # El modelo se carga UNA sola vez, al arrancar el servidor
 RUTA_MODELO = Path(__file__).resolve().parent.parent / "modelo" / "modelo.joblib"
@@ -15,7 +16,7 @@ app = FastAPI(title="API de pingüinos")
 # CORS: permite que el frontend (otro origen) llame a la API
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://tp-final-pinguinos-api.onrender.com"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -45,3 +46,6 @@ def predecir(datos: Pinguino):
             for clase, p in zip(modelo.classes_, probas)
         },
     }
+
+RUTA_FRONTEND = Path(__file__).resolve().parent.parent / "frontend"
+app.mount("/", StaticFiles(directory=RUTA_FRONTEND, html=True), name="frontend")

@@ -1,4 +1,6 @@
-const API_URL = "https://tp-final-pinguinos-api.onrender.com";
+const API_URL = location.hostname.endsWith("onrender.com")
+  ? ""
+  : "https://tp-final-pinguinos-api.onrender.com";
 
 const formulario = document.getElementById("formulario");
 const resultado = document.getElementById("resultado");
